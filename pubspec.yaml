@@ -29,9 +29,16 @@ flutter:
 
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/avatar.jpg
+    - assets/images/intro.png
+    - assets/images/intro1.png
+    - assets/images/intro2.png
+    - assets/images/laptop.jpg
+    - assets/images/shoe.jpg
+    - assets/images/shoe2.jpg
+    - assets/images/shoes2.jpg
+    - assets/images/mastercard.png
 
   # fonts:
   #   - family: Schyler

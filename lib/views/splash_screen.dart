@@ -13,8 +13,8 @@ class SplashScreen extends StatelessWidget {
                         end: Alignment.bottomRight,
                         colors: [
                             Theme.of(context).primaryColor,
-                            Theme.of(context).primaryColor.withOpacity(0.8),
-                            Theme.of(context).primaryColor.withOpacity(0.8),
+                            Theme.of(context).primaryColor.withValues(alpha: 0.8),
+                            Theme.of(context).primaryColor.withValues(alpha: 0.8),
                         ],
                     ),
                 ),
@@ -47,7 +47,7 @@ class SplashScreen extends StatelessWidget {
                                                         shape: BoxShape.circle,
                                                         boxShadow: [
                                                             BoxShadow(
-                                                                color: Colors.black.withOpacity(0.1),
+                                                                color: Colors.black.withValues(alpha: 0.1),
                                                                 blurRadius: 20,
                                                                 spreadRadius: 2,
                                                                 offset: Offset(0, 4),
@@ -120,7 +120,7 @@ class SplashScreen extends StatelessWidget {
                                     "Style meets simplicity",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        color: Colors.white.withOpacity(0.9), // 0.9 * 255 = 230
+                                        color: Colors.white.withValues(alpha: 0.9), // 0.9 * 255 = 230
                                         fontSize: 14,
                                         letterSpacing: 2,
                                         fontWeight: FontWeight.w300,

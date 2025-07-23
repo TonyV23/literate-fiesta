@@ -35,10 +35,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     ];
 
     // handle get started button pressed
-    void _handleGetStarted(){
-      final AuthController authController = Get.find<AuthController>();
-      authController.setFirstTimeDone();
-      Get.off(()=> const SigninScreen());
+    void _handleGetStarted() {
+        final AuthController authController = Get.find<AuthController>();
+        authController.setFirstTimeDone();
+        Get.off(() => SigninScreen());
     }
 
     @override
@@ -100,7 +100,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             children: [
                                 TextButton(
                                     onPressed: () {
-                                      _handleGetStarted();
+                                        _handleGetStarted();
                                     },
                                     child: Text('Skip',
                                         style: AppTextstyles.withColor(AppTextstyles.buttonMedium, isDark ? Colors.grey[400]! : Colors.grey[600]!),
@@ -110,7 +110,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                         if (_currentPage < _items.length - 1) {
                                             _pageController.nextPage(duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
                                         } else {
-                                          _handleGetStarted();
+                                            _handleGetStarted();
                                         }
                                     },
                                     style: ElevatedButton.styleFrom(

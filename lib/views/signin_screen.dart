@@ -6,6 +6,8 @@ import 'package:pablo/views/main_screen.dart';
 import 'package:pablo/views/signup_screen.dart';
 import 'package:pablo/views/widgets/custom_textfield.dart';
 
+import 'forgot_password_screen.dart';
+
 class SigninScreen extends StatelessWidget {
     SigninScreen({super.key});
 
@@ -68,7 +70,7 @@ class SigninScreen extends StatelessWidget {
                             Align(
                                 alignment: Alignment.centerRight,
                                 child: TextButton( 
-                                    onPressed: () => Get.to(()=>ForgotPasswordScreen())
+                                    onPressed: () => Get.to(()=>ForgotPasswordScreen()),
                                     child: Text("Forgot your password ?", style: AppTextstyles.withColor(AppTextstyles.buttonMedium, Theme.of(context).primaryColor),)
                                 )
 

@@ -136,6 +136,6 @@ class SignUpScreen extends StatelessWidget {
 
 void _handleSignUp() {
     final AuthController authController = Get.find<AuthController>();
-    Get.to(() => const MainScreen());
+    Get.offAll(() => const MainScreen());
 
 }

@@ -3,6 +3,9 @@ import 'package:get/get.dart';
 import 'package:pablo/controllers/theme_controller.dart';
 import 'package:pablo/views/widgets/category_chips.dart';
 import 'package:pablo/views/widgets/custom_search_bar.dart';
+import 'package:pablo/views/widgets/grid_products.dart';
+import 'package:pablo/views/widgets/popular_products.dart';
+import 'package:pablo/views/widgets/sale_banner.dart';
 
 class HomeScreen extends StatelessWidget {
     const HomeScreen({super.key});
@@ -38,11 +41,18 @@ class HomeScreen extends StatelessWidget {
                         CustomSearchBar(),
 
                         // category chips
-                      CategoryChips(),
+                        CategoryChips(),
 
+                        //  sale banner
+                        SaleBanner(),
 
+                        // popular products
+                        PopularProducts(),
 
-                        /*END OF HEADER SECTION */
+                        // grid products
+                        Expanded(child: GridProducts(),) 
+
+                    /*END OF HEADER SECTION */
 
                     ],
                 )),);
